@@ -66,7 +66,7 @@ db.serialize(() => {
     // CAFÉS ESPECIALES (precio medio porque varía)
     { nombre: "Affogato Frangelico", categoria: "Cafés especiales", precio: 6.50, ingredientes: "helado vainilla, licor Frangelico, café, chocolate", imagen: "/img/afogato-fran.jpg" },
     { nombre: "Affogato Tiramisú", categoria: "Cafés especiales", precio: 6.50, ingredientes: "helado mascarpone, Amaretto, café, cacao", imagen: "" },
-    { nombre: "Café irlandés", categoria: "Cafés especiales", precio: 5.50, ingredientes: "café, whisky, nata", imagen: "" },
+    { nombre: "Café irlandés", categoria: "Cafés especiales", precio: 5.50, ingredientes: "café, whisky, nata", imagen: "/img/irlandesito.jpg" },
     { nombre: "Café jamaicano", categoria: "Cafés especiales", precio: 6.00, ingredientes: "café, ron, nata", imagen: "" },
     { nombre: "Café escocés", categoria: "Cafés especiales", precio: 6.50, ingredientes: "café, whisky escocés, nata", imagen: "" },
     { nombre: "Café caribeño", categoria: "Cafés especiales", precio: 6.50, ingredientes: "café, ron, licor", imagen: "" }

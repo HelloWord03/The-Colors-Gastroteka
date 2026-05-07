@@ -9,7 +9,7 @@ export default function Header() {
       <nav className="container mx-auto flex justify-between items-center p-4 relative">
 
         {/* LOGO */}
-        <h1 className="text-2xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-white to-blue-500">
+        <h1 className="sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-white to-blue-500">
           <a href="../index.html">The Colors Gastroteka</a>
         </h1>
 
@@ -28,7 +28,7 @@ export default function Header() {
             bg-black md:bg-transparent
             flex flex-col md:flex-row
             gap-4 md:gap-6
-            text-xl sm:text-2xl lg:text-4xl
+            text-xl sm:text-3xl lg:text-4xl
             font-medium
             p-4 md:p-0
             transition-all duration-300
