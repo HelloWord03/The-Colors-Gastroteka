@@ -23,7 +23,7 @@ export default function BarraCategorias({
       {/* HEADER */}
       <div className="flex items-center justify-between px-4">
 
-        <h3 className="text-2xl text-white font-semibold text-transparent bg-clip-text bg-gradient-to-r 
+        <h3 className="text-4xl text-white font-semibold text-transparent bg-clip-text bg-gradient-to-r 
         from-red-500 via-white to-blue-500 font-serif md:hidden">Categorías</h3>
 
         {/* BOTÓN HAMBURGUESA */}
