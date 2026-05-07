@@ -1,0 +1,22 @@
+/* Estilos para la fuente Havana */
+@font-face {
+  font-family: 'Havana';
+  src: url('../fonts/IslandMoments-Regular.woff2') format('woff2'),
+       url('../fonts/IslandMoments-Regular.woff') format('woff'),
+       url('../fonts/IslandMoments-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Aplicar la fuente Havana a los títulos y encabezados principales */
+h3, header, #menu h4 {
+  font-family: 'Havana', san-serif !important;
+}
+footer {
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+/* Estilos para el fondo oscuro del mapa */
+iframe{
+  filter: invert(100%);
+  width: 100%;
+  border: 0;
+}
