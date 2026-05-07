@@ -1,0 +1,9 @@
+# Dependencias
+Backend-Bar/node_modules/
+Frontend-Bar/node_modules/
+
+# Base de datos (se regenera sola al arrancar)
+Backend-Bar/database.db
+
+# Variables de entorno
+.env
