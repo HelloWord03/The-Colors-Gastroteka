@@ -30,7 +30,7 @@ export default function Header() {
             bg-black md:bg-transparent
             flex flex-col md:flex-row
             gap-4 md:gap-6
-            text-xl sm:text-3xl lg:text-4xl
+            text-3xl lg:text-4xl
             font-medium
             p-4 md:p-0
             transition-all duration-300
