@@ -9,8 +9,8 @@ export default function Header() {
       <nav className="container mx-auto flex justify-between items-center p-4 relative">
 
         {/* LOGO */}
-        <h1 className="sm:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-white to-blue-500">
-          <a href="../index.html" className="text-4xl lg:text-5xl">
+        <h1 className="sm:text-3xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-white to-blue-500">
+          <a href="../index.html" className="text-3xl lg:text-4xl">
             The Colors Gastroteka
           </a>
         </h1>
