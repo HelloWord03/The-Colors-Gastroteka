@@ -42,11 +42,11 @@ export default function FormularioReserva() {
 
     // Códigos de emojis para evitar problemas de encoding UTF-8
     const texto =       
-      `==================================================\n`` +
+      `==================================================\n` +
       `${emoji.plato} Reserva The Colors Gastroteka\n\n` +
       `${emoji.persona} Nombre: ${nombre}\n` +
       `${emoji.email} Email: ${email}\n` +
-      `${emoji.nota} Detalles: ${mensaje}\n`` +
+      `${emoji.nota} Detalles: ${mensaje}\n` +
       `==================================================`;
 
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(texto)}`;
