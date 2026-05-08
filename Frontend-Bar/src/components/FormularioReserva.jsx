@@ -41,14 +41,13 @@ export default function FormularioReserva() {
   };
 
     // Códigos de emojis para evitar problemas de encoding UTF-8
-    const texto =       
+    const texto =
       `==================================================\n` +
-      `${emoji.plato} Reserva The Colors Gastroteka\n\n` +
-      `${emoji.persona} Nombre: ${nombre}\n` +
-      `${emoji.email} Email: ${email}\n` +
-      `${emoji.nota} Detalles: ${mensaje}\n` +
+      `\u{1F37D}\u{FE0F} Reserva The Colors Gastroteka\n\n` +
+      `\u{1F464} Nombre: ${nombre}\n` +
+      `\u{1F4E7} Email: ${email}\n` +
+      `\u{1F4DD} Detalles: ${mensaje}\n` +
       `==================================================`;
-
     console.log(texto);
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(texto)}`;
 
