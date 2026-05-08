@@ -49,6 +49,7 @@ export default function FormularioReserva() {
       `${emoji.nota} Detalles: ${mensaje}\n` +
       `==================================================`;
 
+    console.log(texto);
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(texto)}`;
 
     // Abrir WhatsApp con el mensaje prellenado
