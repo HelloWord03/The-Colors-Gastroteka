@@ -32,7 +32,7 @@ db.serialize(() => {
     { nombre: "Croquetas de la casa", categoria: "Para compartir", precio: 12.00, ingredientes: "", imagen: "/img/croquetas.jpg" },
     { nombre: "Tiras de pollo crujientes con ali-oli", categoria: "Para compartir", precio: 12.00, ingredientes: "", imagen: "/img/tiras-pollo.jpg" },
     { nombre: "Tequeños con salsa de frutos rojos (6U)", categoria: "Para compartir", precio: 8.00, ingredientes: "", imagen: "/img/tequeños.jpg" },
-    { nombre: "Patatas bravuconas", categoria: "Para compartir", precio: 12.00, ingredientes: "", imagen: "" },
+    { nombre: "Patatas bravuconas", categoria: "Para compartir", precio: 12.00, ingredientes: "", imagen: "/img/patatas.jpg" },
     { nombre: "Paleta ibérica", categoria: "Para compartir", precio: 20.00, ingredientes: "", imagen: "/img/paleta.jpg" },
 
     // HUEVOS ROTOS
@@ -46,9 +46,9 @@ db.serialize(() => {
     { nombre: "Pulpo a la plancha", categoria: "Raciones", precio: 20.00, ingredientes: "", imagen: "/img/pulpo.jpeg" },
 
     // BURGERS
-    { nombre: "Burger clásica", categoria: "Burgers", precio: 12.95, ingredientes: "lechuga, tomate, carne, huevo, queso gouda, bacon, salsa BBQ", imagen: "" },
+    { nombre: "Burger clásica", categoria: "Burgers", precio: 12.95, ingredientes: "lechuga, tomate, carne, huevo, queso gouda, bacon, salsa BBQ", imagen: "/img/hamb-clasica.jpg" },
     { nombre: "Burger de foie y hongos", categoria: "Burgers", precio: 14.95, ingredientes: "lechuga, tomate, carne, foie, crema de hongos", imagen: "/img/hamb-foie.jpg" },
-    { nombre: "Burger Diávola", categoria: "Burgers", precio: 14.50, ingredientes: "lechuga, tomate, carne, cebolla, jalapeños, queso crema, chipotle", imagen: "" },
+    { nombre: "Burger Diávola", categoria: "Burgers", precio: 14.50, ingredientes: "lechuga, tomate, carne, cebolla, jalapeños, queso crema, chipotle", imagen: "/img/hamb-diavola.jpg" },
     { nombre: "Burger ibérica", categoria: "Burgers", precio: 14.50, ingredientes: "lechuga, tomate, carne, huevo, queso manchego, jamón ibérico", imagen: "/img/hamb-iberica.jpeg" },
     { nombre: "Burger de pollo", categoria: "Burgers", precio: 11.50, ingredientes: "lechuga, tomate, pollo crujiente, queso gouda, ali-oli, alcaparras, pepinillo", imagen: "/img/hamb-pollo.jpeg" },
 
@@ -61,15 +61,15 @@ db.serialize(() => {
 
     // POSTRES
     { nombre: "Postres de la casa", categoria: "Postres", precio: 6.50, ingredientes: "", imagen: "" },
-    { nombre: "Valenciano", categoria: "Postres", precio: 6.50, ingredientes: "helado vainilla, zumo naranja, licor", imagen: "" },
+    { nombre: "Valenciano", categoria: "Postres", precio: 6.50, ingredientes: "helado vainilla, zumo naranja, licor", imagen: "/img/valenciano.jpg" },
 
     // CAFÉS ESPECIALES (precio medio porque varía)
     { nombre: "Affogato Frangelico", categoria: "Cafés especiales", precio: 6.50, ingredientes: "helado vainilla, licor Frangelico, café, chocolate", imagen: "/img/afogato-fran.jpg" },
-    { nombre: "Affogato Tiramisú", categoria: "Cafés especiales", precio: 6.50, ingredientes: "helado mascarpone, Amaretto, café, cacao", imagen: "" },
+    { nombre: "Affogato Tiramisú", categoria: "Cafés especiales", precio: 6.50, ingredientes: "helado mascarpone, Amaretto, café, cacao", imagen: "/img/afogato-tiramisu.jpg" },
     { nombre: "Café irlandés", categoria: "Cafés especiales", precio: 5.50, ingredientes: "café, whisky, nata", imagen: "/img/irlandesito.jpg" },
-    { nombre: "Café jamaicano", categoria: "Cafés especiales", precio: 6.00, ingredientes: "café, ron, nata", imagen: "" },
-    { nombre: "Café escocés", categoria: "Cafés especiales", precio: 6.50, ingredientes: "café, whisky escocés, nata", imagen: "" },
-    { nombre: "Café caribeño", categoria: "Cafés especiales", precio: 6.50, ingredientes: "café, ron, licor", imagen: "" }
+    { nombre: "Café jamaicano", categoria: "Cafés especiales", precio: 6.00, ingredientes: "café, ron, nata", imagen: "/img/jamaicano.jpg" },
+    { nombre: "Café escocés", categoria: "Cafés especiales", precio: 6.50, ingredientes: "café, whisky escocés, nata", imagen: "/img/escoces.jpg" },
+    { nombre: "Café caribeño", categoria: "Cafés especiales", precio: 6.50, ingredientes: "café, ron, licor", imagen: "/img/caribeno.jpg" }
 
   ];
 
