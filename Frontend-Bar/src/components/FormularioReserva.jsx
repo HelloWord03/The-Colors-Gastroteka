@@ -51,8 +51,9 @@ export default function FormularioReserva() {
     console.log(texto);
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(texto)}`;
 
+    
     // Abrir WhatsApp con el mensaje prellenado
-    window.open(url, "_blank");
+    window.open(document.getElementById("debug-url").textContent = url;, "_blank");
 
     // Limpiar formulario
     setFormData({
@@ -115,9 +116,7 @@ export default function FormularioReserva() {
         ></textarea>
       </div>
 
-        <div className="text-xs text-gray-500 whitespace-pre-wrap break-all">
-                  {`\u{1F37D}\u{FE0F} prueba de emoji`}
-        </div>
+      <div id="debug-url" className="text-xs text-gray-400 break-all whitespace-pre-wrap"></div>
       <button
         type="submit"
         className="w-full bg-yellow-500 text-black font-semibold py-2 rounded-lg hover:bg-yellow-600 transition duration-200"
