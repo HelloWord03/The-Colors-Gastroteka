@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nuestro Menús</title>
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../styles/style.css">
-</head>
+    <title>Nuestro Menús</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+  </head>
 
-<body class="relative min-h-screen text-gray-800 bg-slate-100">
+  <body style="
+  background-image: url('../img/fondo-menu2.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100dvh;
+  " class="relative text-gray-800 bg-slate-100">
 
-  <!-- Background imagen -->
-  <div class="fondo-fijo">
-    <img src="../img/fondo-menu2.jpg" alt="background">
-  </div>
-
-  <!-- Dark overlay -->
-  <div class="fixed inset-0 -z-10 bg-black/50"></div>
+    <!-- Dark overlay -->
+    <div class="fixed inset-0 -z-10 bg-black/50"></div>
     <!--Contenido de la página-->
-  <div id="root" class="relative z-10"></div>
+    <div id="root" class="relative z-10"></div>
 
-  <footer class=" bg-black/70 text-white text-center py-6 mt-6 font-serif">
-    <div class="space-y-2 px-4">
-      <p class="sm:text-lg lg:text-xl font-bold">
-        © 2026 The Colors Gastroteka
-      </p>
-      <p class="sm:text-lg lg:text-xl font-bold">
-        Teléfono: 945 210 016
-      </p>
-    </div>
-  </footer>
-  <script type="module" src="../src/main.jsx"></script>
-</body>
+    <footer class=" bg-black/70 text-white text-center py-6 mt-6 font-serif">
+      <div class="space-y-2 px-4">
+        <p class="sm:text-lg lg:text-xl font-bold">
+          © 2026 The Colors Gastroteka
+        </p>
+        <p class="sm:text-lg lg:text-xl font-bold">
+          Teléfono: 945 210 016
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="../src/main.jsx"></script>
+  </body>
 
 </html>
