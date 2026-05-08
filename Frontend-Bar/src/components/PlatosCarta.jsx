@@ -1,3 +1,4 @@
+import { useState } from "react";
 // Componente para mostrar cada plato del menú con su imagen, nombre, precio e ingredientes
 export default function PlatosCarta({ plato }) {
   const [abierto, setAbierto] = useState(false);
