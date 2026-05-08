@@ -51,9 +51,10 @@ export default function FormularioReserva() {
     console.log(texto);
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(texto)}`;
 
+    document.getElementById("debug-url").textContent = url;
     
     // Abrir WhatsApp con el mensaje prellenado
-    window.open(document.getElementById("debug-url").textContent = url;, "_blank");
+    window.open(url, "_blank");
 
     // Limpiar formulario
     setFormData({
