@@ -34,7 +34,7 @@ export default function FormularioReserva() {
     const telefono = "688758342";
 
     const emoji = {
-      plato:   String.fromCodePoint(0x1F37D, 0xFE0F),       // 🍽️
+      plato:   String.fromCodePoint(\uD83C\uDF7D\uFE0F),    // 🍽️
       persona: String.fromCodePoint(0x1F464),               // 👤
       email:   String.fromCodePoint(0x1F4E7),               // 📧
       nota:    String.fromCodePoint(0x1F4DD),               // 📝
