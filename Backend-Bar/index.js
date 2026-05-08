@@ -67,9 +67,9 @@ db.serialize(() => {
     { nombre: "Affogato Frangelico", categoria: "Cafés especiales", precio: 6.50, ingredientes: "helado vainilla, licor Frangelico, café, chocolate", imagen: "/img/afogato-fran.jpg" },
     { nombre: "Affogato Tiramisú", categoria: "Cafés especiales", precio: 6.50, ingredientes: "helado mascarpone, Amaretto, café, cacao", imagen: "/img/afogato-tiramisu.jpg" },
     { nombre: "Café irlandés", categoria: "Cafés especiales", precio: 5.50, ingredientes: "café, whisky, nata", imagen: "/img/irlandesito.jpg" },
-    { nombre: "Café jamaicano", categoria: "Cafés especiales", precio: 6.00, ingredientes: "café, ron, nata", imagen: "/img/jamaicano.jpg" },
+    { nombre: "Café jamaicano", categoria: "Cafés especiales", precio: 6.00, ingredientes: "café, ron, nata", imagen: "" },
     { nombre: "Café escocés", categoria: "Cafés especiales", precio: 6.50, ingredientes: "café, whisky escocés, nata", imagen: "/img/escoces.jpg" },
-    { nombre: "Café caribeño", categoria: "Cafés especiales", precio: 6.50, ingredientes: "café, ron, licor", imagen: "/img/caribeno.jpg" }
+    { nombre: "Café caribeño", categoria: "Cafés especiales", precio: 6.50, ingredientes: "café, ron, licor", imagen: "" }
 
   ];
 
