@@ -38,7 +38,7 @@ export default function FormularioReserva() {
         persona: String.fromCodePoint(0x1F464),          // 👤
         email:   String.fromCodePoint(0x1F4E7),          // 📧
         nota:    String.fromCodePoint(0x1F4DD),          // 📝
-  };
+    };
 
     // Códigos de emojis para evitar problemas de encoding UTF-8
    const texto =
