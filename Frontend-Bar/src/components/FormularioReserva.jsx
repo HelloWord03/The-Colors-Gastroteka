@@ -117,8 +117,8 @@ export default function FormularioReserva() {
       </div>
 
         <div className="text-xs text-gray-500 whitespace-pre-wrap break-all">
-  {`\u{1F37D}\u{FE0F} prueba de emoji`}
-</div>
+                  {`\u{1F37D}\u{FE0F} prueba de emoji`}
+        </div>
       <button
         type="submit"
         className="w-full bg-yellow-500 text-black font-semibold py-2 rounded-lg hover:bg-yellow-600 transition duration-200"
