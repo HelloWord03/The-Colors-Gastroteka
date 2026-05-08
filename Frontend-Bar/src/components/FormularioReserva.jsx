@@ -41,17 +41,15 @@ export default function FormularioReserva() {
   };
 
     // Códigos de emojis para evitar problemas de encoding UTF-8
-    const texto =
+   const texto =
       `==================================================\n` +
-      `\u{1F37D}\u{FE0F} Reserva The Colors Gastroteka\n\n` +
-      `\u{1F464} Nombre: ${nombre}\n` +
-      `\u{1F4E7} Email: ${email}\n` +
-      `\u{1F4DD} Detalles: ${mensaje}\n` +
+      `${emoji.plato} Reserva The Colors Gastroteka\n\n` +
+      `${emoji.persona} Nombre: ${nombre}\n` +
+      `${emoji.email} Email: ${email}\n` +
+      `${emoji.nota} Detalles: ${mensaje}\n` +
       `==================================================`;
-    console.log(texto);
-    const url = `https://wa.me/${telefono}?text=${encodeURIComponent(texto)}`;
 
-    document.getElementById("debug-url").textContent = url;
+    const url = `https://wa.me/${telefono}?text=${encodeURIComponent(texto)}`;
     
     // Abrir WhatsApp con el mensaje prellenado
     window.open(url, "_blank");
@@ -117,7 +115,6 @@ export default function FormularioReserva() {
         ></textarea>
       </div>
 
-      <div id="debug-url" className="text-xs text-gray-400 break-all whitespace-pre-wrap"></div>
       <button
         type="submit"
         className="w-full bg-yellow-500 text-black font-semibold py-2 rounded-lg hover:bg-yellow-600 transition duration-200"
