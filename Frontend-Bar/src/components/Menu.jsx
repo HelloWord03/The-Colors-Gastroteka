@@ -45,9 +45,10 @@ export default function Menu() {
   // Manejo de estados de carga y error
   if (loading) {
     return (
-      <p className="text-center py-10 text-slate-600">
-        Cargando menu...
-      </p>
+      <div className="flex flex-col items-center justify-center min-h-screen gap-4">
+        <div className="w-16 h-16 border-4 border-white/20 border-t-yellow-500 rounded-full animate-spin"></div>
+        <p className="text-white text-lg font-serif">Cargando carta...</p>
+      </div>
     );
   }
 
