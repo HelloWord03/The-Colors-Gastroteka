@@ -36,10 +36,10 @@ export default function FormularioReserva() {
 
    const texto =
     `╔══════════════════ ∘◦❁◦∘ ═══════════════════╗
-     ║            THE COLORS GASTROTEKA           ║
-     ╠════════════════════════════════════════════╣
-     ║      RESERVA PENDIENTE DE CONFIRMACIÓN     ║
-     ╚════════════════════════════════════════════╝
+║                                 THE COLORS GASTROTEKA                                   ║
+╠══════════════════════════════════════════╣
+║                      RESERVA PENDIENTE DE CONFIRMACIÓN                    ║
+╚══════════════════════════════════════════╝
 
     Nombre      : ${nombre}
     Personas    : ${personas}
