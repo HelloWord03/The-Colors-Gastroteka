@@ -45,7 +45,7 @@ export default function Header() {
 
           <li>
             <a href="./menu.html" className="text-white hover:text-red-500">
-              Menú
+              Carta
             </a>
           </li>
 
