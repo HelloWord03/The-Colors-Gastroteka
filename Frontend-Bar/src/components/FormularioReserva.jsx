@@ -34,22 +34,27 @@ export default function FormularioReserva() {
 
     const telefono = "688758342";
 
-    const emoji = {
-        plato:   String.fromCodePoint(0x1F37D, 0xFE0F), // 🍽️
-        persona: String.fromCodePoint(0x1F464),          // 👤
-        email:   String.fromCodePoint(0x1F4E7),          // 📧
-        nota:    String.fromCodePoint(0x1F4DD),          // 📝
-    };
-
-    // Códigos de emojis para evitar problemas de encoding UTF-8
    const texto =
-      `==================================================\n` +
-      `${emoji.plato} Reserva The Colors Gastroteka\n\n` +
-      `${emoji.persona} Nombre: ${nombre}\n` +
-      `${emoji.persona} Personas: ${personas}\n` +
-      `${emoji.nota} Hora: ${hora}\n` +
-      `${emoji.nota} Detalles: ${mensaje}\n` +
-      `==================================================`;
+    `╔══════════════════ ∘◦❁◦∘ ═══════════════════╗
+     ║            THE COLORS GASTROTEKA           ║
+     ╠════════════════════════════════════════════╣
+     ║      RESERVA PENDIENTE DE CONFIRMACIÓN     ║
+     ╚════════════════════════════════════════════╝
+
+    Nombre      : ${nombre}
+    Personas    : ${personas}
+    Hora        : ${hora}
+    Detalles    : ${mensaje}
+
+    ════════════════════ ∘◦❁◦∘ ═══════════════════
+
+    Su solicitud ha sido recibida correctamente.
+
+    La reserva está pendiente de confirmación.
+    Nos pondremos en contacto con usted lo antes posible para
+    confirmarla.
+
+    ════════════════════ ∘◦❁◦∘ ═══════════════════`;
 
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(texto)}`;
     
