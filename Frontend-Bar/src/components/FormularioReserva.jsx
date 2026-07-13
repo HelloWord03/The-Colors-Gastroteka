@@ -5,7 +5,8 @@ export default function FormularioReserva() {
     // Estado para manejar los datos del formulario
   const [formData, setFormData] = useState({
     nombre: "",
-    email: "",
+    personas: "",
+    hora: "",
     mensaje: "",
   });
 
@@ -23,10 +24,10 @@ export default function FormularioReserva() {
     e.preventDefault();
 
     // Extraer los datos del formulario
-    const { nombre, email, mensaje } = formData;
+    const { nombre, personas, hora, mensaje } = formData;
 
     // Validar campos
-    if (!nombre.trim() || !email.trim() || !mensaje.trim()) {
+    if (!nombre.trim() || !personas.trim() || !hora.trim() || !mensaje.trim()) {
       alert("Por favor, completa todos los campos");
       return;
     }
@@ -45,7 +46,8 @@ export default function FormularioReserva() {
       `==================================================\n` +
       `${emoji.plato} Reserva The Colors Gastroteka\n\n` +
       `${emoji.persona} Nombre: ${nombre}\n` +
-      `${emoji.email} Email: ${email}\n` +
+      `${emoji.persona} Personas: ${personas}\n` +
+      `${emoji.nota} Hora: ${hora}\n` +
       `${emoji.nota} Detalles: ${mensaje}\n` +
       `==================================================`;
 
@@ -57,7 +59,8 @@ export default function FormularioReserva() {
     // Limpiar formulario
     setFormData({
       nombre: "",
-      email: "",
+      personas: "",
+      hora: "",
       mensaje: "",
     });
   };
@@ -84,16 +87,31 @@ export default function FormularioReserva() {
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-          Email
+        <label htmlFor="personas" className="block text-sm font-medium text-gray-700 mb-1">
+          Número de Personas
         </label>
         <input
-          id="email"
-          type="email"
-          name="email"
-          value={formData.email}
+          id="personas"
+          type="number"
+          name="personas"
+          value={formData.personas}
           onChange={handleChange}
-          placeholder="tu@email.com"
+          placeholder="Número de personas"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          required
+        />
+      </div>
+
+      <div>
+        <label htmlFor="hora" className="block text-sm font-medium text-gray-700 mb-1">
+          Hora de la Reserva
+        </label>
+        <input
+          id="hora"
+          type="time"
+          name="hora"
+          value={formData.hora}
+          onChange={handleChange}
           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
           required
         />
