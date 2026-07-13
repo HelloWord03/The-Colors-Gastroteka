@@ -1,25 +1,48 @@
-// cambiar idioma de la página al hacer clic en el botón de idioma 
-// no se asume que el usuario tenga instalado el traductor de Google, por lo que se carga dinámicamente el script de Google Translate
-// Se asume que el botón de idioma tiene el id "cambiar-idioma" y 
-// que hay un contenedor con id "google_translate_element" para mostrar el widget de traducción
-document.getElementById("cambiar-idioma").addEventListener("click", function () {
-  // Cargar el script de Google Translate si no está ya cargado
-  if (!window.google || !window.google.translate) {
-    const script = document.createElement("script");
-    script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    document.head.appendChild(script);
-  } else {
-    googleTranslateElementInit();
-  }
+const idiomas = [
+    { codigo: "es", nombre: "Español" },
+    { codigo: "en", nombre: "English" },
+    { codigo: "fr", nombre: "Français" },
+    { codigo: "de", nombre: "Deutsch" },
+    { codigo: "it", nombre: "Italiano" },
+    { codigo: "pt", nombre: "Português" }
+];
+
+const boton = document.getElementById("selector-idioma");
+const menu = document.getElementById("menu-idiomas");
+const bandera = document.getElementById("bandera-actual");
+
+menu.innerHTML = idiomas.map(idioma => `
+    <li>
+        <button class="idioma flex items-center gap-2 w-full px-4 py-2 hover:bg-red-600"
+                data-lang="${idioma.codigo}">
+            <img src="./img/flags/${idioma.codigo}.svg" class="w-5 h-5">
+            ${idioma.nombre}
+        </button>
+    </li>
+`).join("");
+
+boton.onclick = () => menu.classList.toggle("hidden");
+
+document.onclick = (e) => {
+    if (!menu.contains(e.target) && !boton.contains(e.target))
+        menu.classList.add("hidden");
+};
+
+menu.addEventListener("click", (e) => {
+
+    const opcion = e.target.closest(".idioma");
+    if (!opcion) return;
+
+    const idioma = opcion.dataset.lang;
+
+    bandera.src = `./img/flags/${idioma}.svg`;
+
+    localStorage.setItem("idioma", idioma);
+
+    menu.classList.add("hidden");
+
+    // cambiarIdioma(idioma);
 });
 
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    {
-      pageLanguage: "es",
-      includedLanguages: "es,en,fr,it,de,pt,zh-CN,ja,ko,ar,ru",
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-    },
-    "google_translate_element"
-  );
-}
+const idioma = localStorage.getItem("idioma") || "es";
+bandera.src = `./img/flags/${idioma}.svg`;
