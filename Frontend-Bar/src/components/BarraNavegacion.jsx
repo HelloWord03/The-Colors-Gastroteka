@@ -11,7 +11,7 @@ export default function Header() {
         {/* LOGO */}
         <h1 className="sm:text-3xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-white to-blue-500">
           <a href="../index.html" className="text-3xl lg:text-4xl">
-            The Colors Gastroteka
+            The Colors
           </a>
         </h1>
 
