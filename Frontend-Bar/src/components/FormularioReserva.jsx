@@ -27,7 +27,7 @@ export default function FormularioReserva() {
     const { nombre, personas, hora, mensaje } = formData;
 
     // Validar campos
-    if (!nombre.trim() || !personas.trim() || !hora.trim() || !mensaje.trim()) {
+    if (!nombre.trim() || !personas.trim() || !hora.trim()) {
       alert("Por favor, completa todos los campos");
       return;
     }
@@ -134,7 +134,7 @@ export default function FormularioReserva() {
           placeholder="Cuéntanos los detalles de tu reserva..."
           rows="4"
           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 resize-none"
-          required
+          
         ></textarea>
       </div>
 
